@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@color/darkBlue">
+
+    <TextView
+        android:id="@+id/tvHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/chivo"
+        android:text="FORCAST-INATOR"
+        android:textAlignment="center"
+        android:textColor="@color/lightBlue"
+        android:textSize="35sp"
+        android:layout_marginTop="20dp"/>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="City name"
+        android:theme="@style/myTextInputLabel"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+           android:id="@+id/edCityName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorLink="@color/lightGray"
+            android:textColor="@color/lightGray"
+            android:textAlignment="center"
+            android:layout_marginBottom="20dp"
+           />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnCitySearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search City Forecast"
+        android:background="@drawable/round_button"
+        android:padding="6dp"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/darkBlue"
+
+        />
+
+    <Button
+        android:id="@+id/btnCurrentLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="   Location Forecast   "
+        android:background="@drawable/round_button"
+        android:padding="6dp"
+        android:layout_margin="4dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/darkBlue"
+        />
+
+    <TextView
+        android:id="@+id/tvCityName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/chivo"
+        android:text="FORCAST-INATOR"
+        android:textAlignment="center"
+        android:textColor="@color/lightBlue"
+        android:textSize="15sp"
+        android:layout_marginTop="20dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/rvForecasts"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:scrollbars="vertical"
+        android:background="@color/darkBlue"/>
+
+
+
+
+</LinearLayout>
